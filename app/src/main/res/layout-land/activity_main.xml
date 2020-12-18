@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/TextViewTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actividad Fragmentos Jesús"
+        android:textColor="#000000"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="100dp"
+            android:layout_height="wrap_content" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/frameLayoutProf">
+        </FrameLayout>
+
+<!--        <fragment-->
+<!--            android:id="@+id/fragmentProf"-->
+<!--            android:name="com.example.actividadfragmentosjesusmoreno.fragments.FragmentProfesor"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_height="wrap_content" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/frameLayoutAlum">
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/frameLayoutAlumINFO">
+        </FrameLayout>
+
+<!--        <fragment-->
+<!--            android:id="@+id/fragmentAlum"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_marginRight="80dp"-->
+<!--            android:name="com.example.actividadfragmentosjesusmoreno.fragments.FragmentAlumnos"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <fragment-->
+<!--            android:id="@+id/fragmentAlumInfo"-->
+<!--            android:name="com.example.actividadfragmentosjesusmoreno.fragments.FragmentInfoAlumno"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1" />-->
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+
+</LinearLayout>
